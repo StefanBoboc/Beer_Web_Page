@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5vh 90vh 5vh;
+}
+
+/*---MENIU---*/
+.header{
+    padding: 10px;
+    background-color: black;
+    grid-column:1/-1;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.inapoi, .povestea, .contact{
+    text-decoration: none;
+    color: white;
+}
+
+/*---POZA---*/
+.sidebar{
+    grid-column:1/2;
+    background-color: white;
+}
+.poza{
+    background-image: url("imagini/bucur.jpg");
+    background-size: 75%;
+    background-position: center;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+/*---TEXT---*/
+.content{
+    padding: 10px;
+    background-color: yellow;
+    grid-column:2/-1;
+    text-align: center;
+    background-color:white;
+    color:#ffb82e;
+}
+
+/*---FOOTER---*/
+.footer{
+    grid-column:1/-1;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 75px 0 100px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*---BEFORE---*/
+h2.txt::before{
+    content:"Bucur";
+}
+
+.txt{
+    margin-top: 25%;
+}
+
+.asd{
+    font-size: 30 px;
+}
+
+@media (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .poza{
+        background-image: none;
+    }
+}
+

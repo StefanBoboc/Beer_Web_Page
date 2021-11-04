@@ -1,0 +1,300 @@
+* {
+    margin: 0px;
+    paddding: 0px;
+}
+header{
+    background: black;
+    height: px;
+    padding: 40px 40px 0px 40px;
+}
+
+/*---RESTUL DE BUTOANE DIN MENIU---*/
+nav ul li{
+    float:felt;
+    position:relative;
+}
+
+ul.meniu{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 20px 0px 0px 0px;
+}
+
+ul.meniu li a{
+    margin-top: 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*---SPATIERE LOGO---*/
+li:nth-child(3){
+    padding: 0px 20px 0px 20px;
+}
+
+/*---HOVER MENIU---*/
+.hover-line::after{
+    background: white;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width .3s;
+}
+
+.hover-line:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+
+/*---LOGO---*/
+header .logo a{
+    background-image: url("imagini/beer.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 56px;
+    position: relative;
+    text-indent: -999999999px;
+    top: -60px;
+    width:300px;
+}
+
+/*---SUBMENIU---*/
+ul.meniu>li>ul.submeniu{
+    visibility: hidden;
+}
+
+ul.meniu>li:hover>ul.submeniu{
+    background-color: white;
+    visibility: visible;
+}
+
+ul.submeniu li a{
+    color: black;
+}
+
+ul.submeniu li{
+    border-radius: 5px;
+    display:block;
+    justify-content: space-around;
+    padding: 10px;
+    width: 150px;
+}
+
+ul.submeniu{
+    border-style: solid;
+    border-radius: 0px 0px 5px 5px;
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    padding: 10px;
+}
+
+/*---HOVER SUBMENIU---*/
+.hover-line-sub::after{
+    background: #ffb82e;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width .3s;
+}
+
+.hover-line-sub:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+
+/*---BANNER---*/
+section.banner{
+    background-image: url("imagini/bere_negru.jpg");
+    background-size: 100%;
+}
+section.bannner{
+    background-image: url("imagini/contactare.png");
+    background-size: 100%;
+}
+section.banner-cos{
+    background-image: url("imagini/cumparaturi.jpg");
+    background-size: 100%;
+}
+section.banner-comanda{
+    background-image: url("imagini/carton.png");
+    background-size: 70%;
+}
+section.banner-noi{
+    background-image: url("imagini/noi1.png");
+    background-size: 40%;
+}
+section.banner-ei{
+    background-image: url("imagini/noi.jpg");
+    background-size: 80%;
+}
+.banner, .bannner, .banner-cos, .banner-comanda, .banner-noi, .banner-ei{
+    background-color:black;
+    background-position: center;
+    height: 250px;
+    padding:20px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.subtitlu{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 115px auto 5px auto;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    width: 80%;
+}
+
+.titlu{
+    color: #fff;
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+/*---CONTACT---*/
+#contact{
+    color: black;
+    background: white;
+    padding: 20px 40px;
+    border-style: solid;
+    border-color: #ffb82e;
+    margin: 20px 40px;
+    border-radius: 10px;
+}
+
+.titlu_contact{
+    padding: 20px;
+    background:white;
+    text-align: center;
+}
+
+.date_contact{
+    padding: 20px;
+    font-size: 18px;
+}
+
+/*---SLOGAN ANIMATIE---*/
+#container {
+  color:#ffb82e;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  color:gray;
+}
+#flip div:first-child div {
+    background:#ffb82e;
+    color: black;
+}
+#flip div:last-child div {
+  color:gray;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+#poveste{
+    padding: 20px;
+    margin: 20px;
+
+    text-align:center;
+}
+.unu{
+padding: 20px;
+    margin: 20px;
+border-radius: 10px;
+    background-color:#ffb82e;
+}
+
+/*---FOOTER---*/
+footer{
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 75px 0;
+    text-align: center;
+    font-size: 18px;
+}
+footer > div{
+    padding: 20px 0;
+}
+
+/*---DESPRE COMANDĂ---*/
+#joke{
+    background-color: black;
+    color: #ffb82e;
+    border-radius:10px;
+    font-size: 20px;
+    margin:40px;
+    padding:40px;
+    text-align: center;
+}
+
+.standard{
+    background-color: #ffb82e;
+    color: black;
+    border-radius:10px;
+    font-size: 20px;
+    margin:40px;
+    padding:40px;
+}
+
+.tab{
+    text-indent: 50px;
+}
+
+@media (max-width:1000px){
+    .logo{
+        display:none;
+    }
+    section.banner-noi{
+        background-size:80%;
+    }
+    section.banner-ei{
+        background-size:60%;
+    }
+    section.banner-comanda{
+        background-size:80%;
+    }
+}

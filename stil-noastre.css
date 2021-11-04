@@ -1,0 +1,88 @@
+/*---CELE TREI BERI---*/
+.berile{
+    background-color: white;
+}
+
+section.berile > :first-child{
+    margin:280px 0px 0px 0px;
+}
+
+section.berile > :last-child{
+    margin:0px 0px 200px 0px;
+}
+
+#cont1{
+    background: linear-gradient(to left, #ffb82e 0%, #ffff99 100%);
+}
+
+#cont2{
+    background: linear-gradient(to left, #ffb82e 0%, #696969 100%);
+}
+
+#cont3{
+    background: linear-gradient(to left, #ffb82e 0%, #cc3300 100%);
+}
+
+#cont1,#cont2,#cont3{
+    border: 10px white solid;
+    border-radius: 10px;
+    margin:100px 0px;
+}
+
+/*---POZE BERI---*/
+#bere1{
+    background-image: url("imagini/bere1.png");
+}
+
+#bere2{
+    background-image: url("imagini/bere2.png");
+}
+
+#bere3{
+    background-image: url("imagini/bere3.png");
+}
+
+#bere1,#bere2,#bere3{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    padding: 130px;
+    margin: 70px;
+    background-size: 400px;
+}
+
+/*---TEXT---*/
+.dreapta{
+    flex:1;
+    text-align: center;
+    margin:100px;
+    padding:5%;
+}
+
+#b1,#b2,#b3{
+    font-size: 17px;
+    color: black;
+}
+
+/*---GHICITOARE DIN FINAL; TASTA '3'---*/
+#ghicitoare{
+    margin: 40px;
+    padding: 90px;
+    color:#ffb82e;
+    display: flex;
+    min-height: ;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    color: black;
+    background-image: url("imagini/intrebare.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#textul{
+    padding-top: 30px;
+    justify-content:space-around;
+    text-align:center;
+    color: white;
+}

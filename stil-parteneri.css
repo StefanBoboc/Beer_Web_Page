@@ -1,0 +1,89 @@
+/*---CRONOMETRU---*/
+#mesaj{
+    font-size: 50px;
+    font-weight: bold;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.concurs{
+    margin: 20px;
+    padding: 20px;
+    color:#ffb82e;
+    display: flex;
+    min-height: ;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    color: black;
+    background-image: url("imagini/cadou.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.countdown{
+    display:flex;
+    justify-content:space-around;
+    text-align:center;
+    color: black;
+}
+
+.day,.hour,.minute,.second{
+    font-size:30px;
+}
+
+/*---PRODUSE---*/
+.cards{
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1000px;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    box-shadow: 0 0 3px rgba(255, 184, 46, 1);
+}
+
+.card_image{
+    width: 100%;
+    display: block;
+}
+
+.card_content{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+}
+
+.card_content > p:first-of-type{
+    margin-top: 0;
+}
+
+.card_content > p:last-of-type{
+    margin-bottom: 0;
+}
+
+.card_info{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #cccccc;
+}
+
+.card_link{
+    color: #64968c;
+    text-decoration:none;
+}
+
+.card_link:hover{
+    color:#ffb82e;
+}
